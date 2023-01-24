@@ -1,0 +1,58 @@
+body{
+    background-image: url("../css/img/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.title{
+    text-align: center;
+    margin: 1rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.data{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-around;
+}
+select{
+    height: 8%;
+    border-radius: 3%;
+}
+input{
+    height: 8%;
+    border-radius: 3%;
+}
+.checkbox{
+   justify-content: center;
+    display: flex;
+    flex-direction: row;
+    border-radius: 3%;
+}
+.checkbox > input{
+    height: 100%;
+}
+
+button{
+    background-color: rgba(162, 156, 156, 0.432);
+    color: #fff;
+    height: 15%;
+    margin: 2rem;
+    font-size: 3rem;
+}
+
+#temporary{
+    height: 10%;
+}
+#definitive{
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    margin: 0;
+}

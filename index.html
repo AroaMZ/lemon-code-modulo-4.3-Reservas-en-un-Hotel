@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <h1 class="title">RESERVA DE HOTEL</h1>
+      <div class="data">
+        <select name="room" id="room" onchange="finalPrice()">
+            <option value="standard">Standard</option>
+            <option value="junior" selected>Junior Suite</option>
+            <option value="suite">Suite</option>
+          </select>
+          <div class="checkbox">
+          <input type="checkbox" id="spa" onchange="finalPrice()">Spa
+          </div>
+          <select name="occupation" id="occupation" onchange="finalPrice()">
+            <option value="individual">Individual</option>
+            <option value="doble">Doble</option>
+            <option value="triple">Triple</option>
+          </select>
+          Numero de noches<input type="number" id="night" value="0" onchange="finalPrice()">
+          Numero de noches del parking<input type="number" id="parking" value="0" onchange="finalPrice()">
+          <div id="temporary"></div>
+          <button type="button" id="result">Calcular</button>
+          <h2 id="definitive"></h2>
+      </div>
+    </div>
+    <script src="js/js.js"></script>
+</body>
+</html>
